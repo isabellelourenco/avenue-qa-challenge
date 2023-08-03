@@ -1,0 +1,11 @@
+{
+  "name": "avenue-qa-challenge",
+  "version": "1.0.0",
+  "description": "Avenue challenge for the QA position",
+  "main": "index.js",
+  "author": "Isabelle Lourenco",
+  "license": "MIT",
+  "devDependencies": {
+    "cypress": "^12.17.3"
+  }
+}

@@ -1,0 +1,20 @@
+{
+    "validCordinates": [
+        {
+        "latitude": "-8.0584933",
+        "longitude": "-34.900002"
+        },
+        {
+        "latitude": "37.5666791",
+        "longitude": "126.9782914"
+        }
+    ],
+    "invalidLatitude": {
+        "latitude": "test",
+        "longitude": "126.9782914"
+    },
+    "invalidLongitude": {
+        "latitude": "37.5666791",
+        "longitude": "test"
+    }
+}

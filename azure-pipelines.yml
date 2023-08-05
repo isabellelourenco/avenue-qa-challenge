@@ -6,8 +6,6 @@ jobs:
       vmImage: 'ubuntu-16.04'
     # Runs tests in parallel https://docs.cypress.io/guides/guides/parallelization
     # https://learn.microsoft.com/en-us/azure/devops/pipelines/process/phases?view=azure-devops&tabs=yaml
-    strategy:
-      parallel: 2
     steps:
       - task: NodeTool@0
       # Caches dependencies using npm lock file as key

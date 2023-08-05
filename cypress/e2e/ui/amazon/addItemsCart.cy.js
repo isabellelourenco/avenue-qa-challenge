@@ -4,9 +4,8 @@ describe('Cart', () => {
 
   beforeEach(() => {
     cy.accessHomePage()
-    // cy.removeItemsFromCart()
 
-    cy.fixture('item').then(i => {
+    cy.fixture('ui/item').then(i => {
       testData = i
     })
   })
@@ -17,7 +16,7 @@ describe('Cart', () => {
 
     cy.addProductToCart(firstItem.title,firstItem.dataAsin)
     cy.addProductToCart(secondItem.title,secondItem.dataAsin)
-    cy.accessCart()
+    cy.accessCartPage()
 
     cy.get(`[data-asin="${firstItem.dataAsin}"]`).should('be.visible')
     cy.get(`[data-asin="${secondItem.dataAsin}"]`).should('be.visible')
@@ -27,7 +26,8 @@ describe('Cart', () => {
 
     cy.getCartTotalPrice().then((amountValue) => {
         const amountValueFormatted = amountValue.toString().replace('.', ',');
-        cy.get('#sc-subtotal-amount-activecart').should('have.text', `\u00a0R$\u00a0${amountValueFormatted}`);
+        const amount = `\u00a0R$\u00a0${amountValueFormatted}`
+        cy.get('#sc-subtotal-amount-activecart').should('have.text', amount);
 
     })
   })

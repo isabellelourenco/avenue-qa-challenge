@@ -1,24 +1,20 @@
 
 Cypress.Commands.add('accessHomePage', () => {
-    cy.visit('/')
+    cy.visit('https://www.amazon.com.br')
     cy.get('#desktop-banner').should('be.visible')
  })
 
 Cypress.Commands.add('addProductToCart', (item, dataAsin) => {
     cy.get('#twotabsearchtextbox').type(item)
     cy.get('#nav-search-submit-button').click()
-    cy.get(`[data-asin="${dataAsin}"] h2`).click()
+    cy.get(`[data-asin="${dataAsin}"] h2 a`).click()
+    cy.get('#add-to-cart-button').should('be.visible')
     cy.get('#add-to-cart-button').click()
  })
 
-Cypress.Commands.add('accessCart', () => {
+Cypress.Commands.add('accessCartPage', () => {
     cy.get('#nav-cart-count-container').click()
 })
-
-Cypress.Commands.add('accessCart', () => {
-    cy.get('#nav-cart-count-container').click()
-})
-
 
 Cypress.Commands.add('getCartTotalPrice', () => {
     let totalAmount = 0
@@ -31,19 +27,3 @@ Cypress.Commands.add('getCartTotalPrice', () => {
       return totalAmount 
     })
 });
-
-
-
-// Cypress.Commands.add('removeItemsFromCart', (locator) => {
-//     cy.visit('cart')
-//     cy.get('.sc-list-item-content').then((items) => {
-//         const numItems = items.length;
-    
-//         for (let i = 0; i < numItems; i++) {
-//           cy.get('.sc-action-delete').first().click();
-//         }
-
-//         cy.get('.sc-list-item-content').should('have.length', 0);
-//       });
-    
-//  })

@@ -2,10 +2,10 @@ describe('Account', () => {
     let testData;
 
     beforeEach(() => {
-      cy.fixture('user').then(r => {
-        testData = r
+      cy.accessHomePage()
+      cy.fixture('ui/user').then(u => {
+        testData = u
       })
-      cy.visit('/')
     })
 
     it('should fill the registry account form', () => {

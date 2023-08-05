@@ -1,4 +1,4 @@
-describe('Create account', () => {
+describe('Access Pages', () => {
 
     beforeEach(() => {
         cy.accessAvenueHomePage()

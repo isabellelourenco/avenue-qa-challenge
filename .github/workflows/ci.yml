@@ -17,7 +17,7 @@ jobs:
       - name: Run Cypress Tests
         uses: cypress-io/github-action@v5
         with:
-          start: yarn cypress run --env grepTags=@smoke,grepFilterSpecs=true 
+          start: yarn cypress run --env grepTags=@smoke 
           record: true
           parallel: true 
         env:

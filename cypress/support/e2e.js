@@ -17,8 +17,5 @@
 import './commands/api_commands'
 import './commands/ui_commands'
 import 'cypress-axe'
-import 'cypress-grep'
 
 // Alternatively you can use CommonJS syntax:
-const registerCypressGrep = require('@cypress/grep')
-registerCypressGrep()

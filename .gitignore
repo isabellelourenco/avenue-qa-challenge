@@ -1,4 +1,6 @@
 node_modules/
+cypress.env.json
+cypress/downloads/
 cypress/videos
 cypress/screenshots
-yarn_lock
+yarn-error.log

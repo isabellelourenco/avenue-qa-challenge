@@ -1,7 +1,7 @@
 const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
-  projectId: "jc9aze",
+  projectId: "k5pkre",
   e2e: {
     env: {
       API_URL: 'https://api.openweathermap.org/data/2.5/weather',

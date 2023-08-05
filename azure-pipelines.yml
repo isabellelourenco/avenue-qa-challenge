@@ -33,5 +33,3 @@ jobs:
       - script: yarn cypress run --record --parallel --ci-build-id $BUILD_BUILDNUMBER
         # For recording and parallelization to work you must set your CYPRESS_RECORD_KEY
         # in Azure DevOps → Your Pipeline → Edit → Variables
-        env:
-          CYPRESS_RECORD_KEY: $(CYPRESS_RECORD_KEY)

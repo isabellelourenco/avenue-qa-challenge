@@ -1,16 +1,16 @@
 
-describe('Cart', () => {
+describe('Add items cart', () => {
   let testData;
 
   beforeEach(() => {
-    cy.accessHomePage()
+    cy.accessAmazonHomePage()
 
     cy.fixture('ui/item').then(i => {
       testData = i
     })
   })
 
-  it('should add 2 products to cart with success', () => {
+  it('should add 2 products to cart with success', { tags: '@smoke' }, () => {
     const firstItem = testData.items[0]
     const secondItem = testData.items[1]
 

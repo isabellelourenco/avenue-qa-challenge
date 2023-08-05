@@ -14,8 +14,10 @@
 // ***********************************************************
 
 // Import commands.js using ES2015 syntax:
-import './commands/api_commands'
 import './commands/ui_commands'
 import 'cypress-axe'
 
+
 // Alternatively you can use CommonJS syntax:
+const registerCypressGrep = require('@cypress/grep')
+registerCypressGrep()

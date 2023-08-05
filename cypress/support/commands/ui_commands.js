@@ -1,8 +1,13 @@
 
-Cypress.Commands.add('accessHomePage', () => {
+Cypress.Commands.add('accessAmazonHomePage', () => {
     cy.visit('https://www.amazon.com.br')
     cy.get('#desktop-banner').should('be.visible')
- })
+})
+
+Cypress.Commands.add('accessAvenueHomePage', () => {
+  cy.visit('https://avenue.us/')
+  cy.get('#header_create_account').should('be.visible')
+})
 
 Cypress.Commands.add('addProductToCart', (item, dataAsin) => {
     cy.get('#twotabsearchtextbox').type(item)
@@ -10,7 +15,7 @@ Cypress.Commands.add('addProductToCart', (item, dataAsin) => {
     cy.get(`[data-asin="${dataAsin}"] h2 a`).click()
     cy.get('#add-to-cart-button').should('be.visible')
     cy.get('#add-to-cart-button').click()
- })
+})
 
 Cypress.Commands.add('accessCartPage', () => {
     cy.get('#nav-cart-count-container').click()

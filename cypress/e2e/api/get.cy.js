@@ -11,7 +11,7 @@ describe('GET /weather', () => {
     })
 
     context('Happy path', () => {
-        it('Should GET the current weather data for the Recife city', () => {
+        it('Should GET the current weather data for the Recife city', { tags: '@smoke' }, () => {
             const recife = testData.validCordinates[0]
         
             cy.request({
@@ -24,7 +24,7 @@ describe('GET /weather', () => {
             });
           });
         
-          it('Should GET the current weather data for the Seoul city', () => {
+          it('Should GET the current weather data for the Seoul city', { tags: '@smoke' }, () => {
             const seoul = testData.validCordinates[1]
       
               cy.request({

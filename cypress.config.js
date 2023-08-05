@@ -8,6 +8,8 @@ module.exports = defineConfig({
       requestMode: true,
     },
     setupNodeEvents(on, config) {
+      require('@cypress/grep/src/plugin')(config);
+      return config;
     },
     viewportWidth: 1920,
     viewportHeight: 1080

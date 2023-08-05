@@ -5,7 +5,12 @@
   "main": "index.js",
   "author": "Isabelle Lourenco",
   "license": "MIT",
+  "scripts": {
+    "cypress:open": "cypress open"
+  },
   "devDependencies": {
-    "cypress": "^12.17.3"
+    "axe-core": "^4.7.2",
+    "cypress": "^12.17.3",
+    "cypress-axe": "^1.4.0"
   }
 }

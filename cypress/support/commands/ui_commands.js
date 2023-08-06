@@ -8,7 +8,7 @@ Cypress.Commands.add('accessAmazonHomePage', () => {
 Cypress.Commands.add('accessCreateAccountPage', () => {
   cy.get('#nav-link-accountList').click()
   cy.get('#createAccountSubmit').click()
-  cy.get('#ap_customer_name').should('be.visible')
+  cy.get('#ap_register_form').should('be.visible')
 })
 
 Cypress.Commands.add('fillCreateAccountForm', (name, email, password) => {

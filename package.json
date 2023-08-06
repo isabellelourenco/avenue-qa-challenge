@@ -6,14 +6,14 @@
   "author": "Isabelle Lourenco",
   "license": "MIT",
   "scripts": {
-    "cypress:open": "cypress open",
-    "cypress:all": "cypress run --spec 'cypress/e2e/'",
-    "cypress:accessibility:cloud": "cypress run --env grepTags=@accessibility --record",
-    "cypress:api:smoke:cloud": "cypress run --env grepTags=@smoke,grepFilterSpecs=true --spec 'cypress/e2e/api' --record",
-    "cypress:ui:smoke:cloud": "cypress run --env grepTags=@smoke,grepFilterSpecs=true --spec 'cypress/e2e/ui' --record",
-    "cypress:smoke": "cypress run --env grepTags=@smoke,grepFilterSpecs=true",
-    "cypress:api": "cypress run --spec 'cypress/e2e/api/'",
-    "cypress:ui": "cypress run --spec 'cypress/e2e/ui/'"
+    "cy:open": "cypress open",
+    "test": "cypress run --spec 'cypress/e2e/'",
+    "test:accessibility:cloud": "cypress run --env grepTags=@accessibility --record",
+    "test:api:smoke:cloud": "cypress run --env grepTags=@smoke,grepFilterSpecs=true --spec 'cypress/e2e/api' --record",
+    "test:ui:smoke:cloud": "cypress run --env grepTags=@smoke,grepFilterSpecs=true --spec 'cypress/e2e/ui' --record",
+    "test:smoke": "cypress run --env grepTags=@smoke,grepFilterSpecs=true",
+    "test:api": "cypress run --spec 'cypress/e2e/api/'",
+    "test:ui": "cypress run --spec 'cypress/e2e/ui/'"
   },
 
   "devDependencies": {

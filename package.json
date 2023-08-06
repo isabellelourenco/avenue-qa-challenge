@@ -10,6 +10,7 @@
     "cypress:all": "cypress run --spec 'cypress/e2e/'",
     "cypress:accessibility:cloud": "cypress run --env grepTags=@accessibility --record",
     "cypress:smoke:cloud": "cypress run --env grepTags=@smoke,grepFilterSpecs=true --record",
+    "cypress:smoke": "cypress run --env grepTags=@smoke,grepFilterSpecs=true",
     "cypress:api": "cypress run --spec 'cypress/e2e/api/'",
     "cypress:ui": "cypress run --spec 'cypress/e2e/ui/'"
   },

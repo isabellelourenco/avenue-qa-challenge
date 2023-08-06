@@ -23,24 +23,24 @@ jobs:
       - name: Run Cypress Tests
         uses: cypress-io/github-action@v5
         with:
-          start: yarn cypress run --record --browser chrome --parallel --env grepTags=@smoke   
+          start: yarn cypress run --env grepTags=@smoke --record --browser chrome --parallel    
         env:
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           CYPRESS_API_KEY: ${{ secrets.CYPRESS_API_KEY }}
       
-      - name: Upload screenshots
-        if: failure()
-        uses: actions/upload-artifact@v3
-        with:
-          name: Screenshots
-          path: cypress/screenshots
-          retention-days: 1
+      # - name: Upload screenshots
+      #   if: failure()
+      #   uses: actions/upload-artifact@v3
+      #   with:
+      #     name: Screenshots
+      #     path: cypress/screenshots
+      #     retention-days: 1
 
-      - name: Upload videos
-        if: failure()
-        uses: actions/upload-artifact@v3
-        with:
-          name: Videos
-          path: cypress/videos
-          retention-days: 1
+      # - name: Upload videos
+      #   if: failure()
+      #   uses: actions/upload-artifact@v3
+      #   with:
+      #     name: Videos
+      #     path: cypress/videos
+      #     retention-days: 1

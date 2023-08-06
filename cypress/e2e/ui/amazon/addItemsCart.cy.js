@@ -1,5 +1,5 @@
 
-describe('Add items cart', () => {
+describe('Amazon Tests', () => {
   let testData;
 
   beforeEach(() => {
@@ -23,12 +23,10 @@ describe('Add items cart', () => {
 
     cy.get('.sc-product-price').should('be.visible')
     cy.get('.sc-product-price').should('be.visible')
-
     cy.getCartTotalPrice().then((amountValue) => {
         const amountValueFormatted = amountValue.toString().replace('.', ',');
         const amount = `\u00a0R$\u00a0${amountValueFormatted}`
         cy.get('#sc-subtotal-amount-activecart').should('have.text', amount);
-
     })
   })
 })

@@ -5,7 +5,6 @@ Based on the exploratory tests executed in the Avenue Web Application, below is 
 > Note: This test plan only tests the app end-to-end, ensuring that both the frontend and API works as expected when connected with each other.
 
 ## Login
-------
 
 Following the risk-based testing approach, the user can't access the application if the login isn't working.
 
@@ -29,7 +28,6 @@ Fill in the required fields with invalid credentials.
 Verify if an error message is displayed.
 
 ## Create Account 
-------
 
 If the user can't create a new account the software cannot be used by new users and the company can lose customers, money and credibility.
 
@@ -62,7 +60,6 @@ Fill in all the required fields in the registration form for every step, and upl
 Verify if the system displays appropriate error messages and does not allow registration until all mandatory fields are filled correctly.
 
 ## Balance
-------
 
 Critical Functionality, essential for buying and selling stocks and currencies.  
 
@@ -85,7 +82,6 @@ Attempt a transfer with an amount greater than the sender's balance.
 Check if that the transfer is not allowed, and an error message is displayed.
 
 ## Exchange
-------
 
 Critical Functionality, user should be able to access the exchange to use the functionality to buy or sell real or dollar coins.
 

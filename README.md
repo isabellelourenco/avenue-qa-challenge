@@ -20,6 +20,10 @@ $ yarn -v
 
 Run `yarn install` to install the dev dependencies.
 
+## Test Plan
+
+You could access the [Avenue Test Plan](./testPlan.md) to see the test cases.
+
 ## Tests
 
 > Before running the tests, create a file called `cypress.env.json` in the project root directory, based on the [`cypress.env.example.json`](./cypress.env.example.json) file, and update the value of the `api_key` property with one of your choice.
@@ -44,4 +48,9 @@ Run `yarn test:smoke` to run only the tests with smoke tags in headless mode.
 > **Important notes about the above the tests**
 >
 > **The accessibility tests are failling!** Due to a accessibility bugs founded during tests.
+
+### Dashboard of Test Results
+
+The pipeline is integrated with the Cypress Dashboard, the smoke tests is running every push or pull request is sent to main branch. You could access the [Dashboard](https://cloud.cypress.io/projects/k5pkre/runs/) to see the results.
+
 

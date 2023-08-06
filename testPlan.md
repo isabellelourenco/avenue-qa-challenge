@@ -83,7 +83,7 @@ Check if that the transfer is not allowed, and an error message is displayed.
 
 ## Exchange
 
-Critical Functionality, user should be able to access the exchange to use the functionality to buy or sell real or dollar coins.
+Critical Functionality, user should be able to access the exchange to use the functionality to buy or sell BRL or USD.
 
 ### Pre-condition
 
@@ -91,13 +91,13 @@ Critical Functionality, user should be able to access the exchange to use the fu
 
 ### Valid Test Cases
 
-#### TC1 - Dollar Balance Conversion:
+#### TC1 - USD Balance Conversion:
 
 The user has a balance in BRL, and select the option to convert their balance to USD.
 The system performs the conversion correctly according to the current exchange rate.
 Verify that the USD balance is updated correctly in the user's account.
 
-#### TC2 - Real Balance Conversion:
+#### TC2 - BRL Balance Conversion:
 
 The user has a balance in USD, and select the option to convert their balance to BRL.
 The system performs the conversion correctly according to the current exchange rate.

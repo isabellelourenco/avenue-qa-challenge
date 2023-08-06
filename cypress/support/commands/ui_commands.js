@@ -52,3 +52,7 @@ Cypress.Commands.add('accessAvenueAccountPage', () => {
   cy.get('#header_create_account').click()
 })
 
+Cypress.Commands.add('accessAvenueLoginPage', () => {
+  cy.get('#header_account_login').click()
+})
+

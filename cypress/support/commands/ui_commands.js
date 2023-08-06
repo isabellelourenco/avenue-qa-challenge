@@ -48,3 +48,7 @@ Cypress.Commands.add('accessAvenueHomePage', () => {
   cy.get('#header_create_account').should('be.visible')
 })
 
+Cypress.Commands.add('accessAvenueAccountPage', () => {
+  cy.get('#header_create_account').click()
+})
+

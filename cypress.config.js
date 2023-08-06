@@ -6,13 +6,14 @@ module.exports = defineConfig({
     env: {
       hideXhr: true,
       API_URL: 'https://api.openweathermap.org/data/2.5/weather',
-      requestMode: true,
+      requestMode: true
     },
     setupNodeEvents(on, config) {
       require('@cypress/grep/src/plugin')(config);
       return config;
     },
     viewportWidth: 1920,
-    viewportHeight: 1080
+    viewportHeight: 1080,
+    videoUploadOnPasses: false
   },
 });

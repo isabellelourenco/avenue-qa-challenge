@@ -4,9 +4,9 @@ Avenue challenge for the QA position using [Cypress](https://cypress.io).
 
 ## Pre-requirements
 
-You need to have [Node.js](https://nodejs.org/) and yarn installed on your computer.
+You need to have [Node.js](https://nodejs.org/) and [yarn](https://yarnpkg.com/) installed on your computer.
 
-For this project, the following versions of node and npm were used:
+For this project, the following versions of node and yarn were used:
 
 ```sh
 $ node -v
@@ -22,7 +22,7 @@ Run `yarn install` to install the dev dependencies.
 
 ## Test Plan
 
-You could access the [Avenue Test Plan](./testPlan.md) to see the test cases.
+Check the [Avenue Test Plan](./testPlan.md) to see the full details.
 
 ## Tests
 
@@ -45,12 +45,12 @@ Run `yarn test:smoke` to run only the tests with smoke tags in headless mode.
 3. Select one of the available browsers (e.g., Electron), and click the Start button;
 4. Finally, click on the test file you want to run and wait for it to finish.
 
-> **Important notes about the above the tests**
+> **Important**
 >
 > **The accessibility tests are failling!** Due to a accessibility bugs founded during tests.
 
 ### Dashboard of Test Results
 
-The pipeline is integrated with the Cypress Dashboard, the smoke tests is running every push or pull request is sent to main branch. You could access the [Dashboard](https://cloud.cypress.io/projects/k5pkre/runs/) to see the results.
+The pipeline is integrated with the Cypress Dashboard. The smoke tests is running in every push or pull request to main branch. You can access the [Dashboard](https://cloud.cypress.io/projects/k5pkre/runs/) to see the results.
 
 

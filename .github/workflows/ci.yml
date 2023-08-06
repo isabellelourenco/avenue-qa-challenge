@@ -12,7 +12,7 @@ jobs:
     strategy:
       fail-fast: false 
       matrix:
-        containers: [1,2] 
+        groups: [amazon, avenue] 
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -26,6 +26,8 @@ jobs:
           start: yarn cypress run --env grepTags=@smoke 
           record: true
           parallel: true 
+          spec: cypress/e2e/${{matrix.groups}}/*.cy.js
+          browser: chrome
         env:
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

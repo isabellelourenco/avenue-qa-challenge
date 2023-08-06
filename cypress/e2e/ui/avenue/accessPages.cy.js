@@ -4,7 +4,7 @@ describe('Access Pages', () => {
         cy.accessAvenueHomePage()
     })
 
-    it.only('should access create account page', { tags: '@smoke' }, () => {
+    it('should access create account page', { tags: '@smoke' }, () => {
         
         cy.get('#header_create_account').click()
         cy.get('[data-testid="full-name-input"]').should('be.visible')

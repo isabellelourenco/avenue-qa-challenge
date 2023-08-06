@@ -24,10 +24,8 @@ jobs:
         uses: cypress-io/github-action@v5
         with:
           start: yarn cypress run --env grepTags=@smoke 
-          record: true
           parallel: true 
           spec: "cypress/e2e/*/${{matrix.groups}}/*.cy.js"
-          browser: chrome
         env:
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

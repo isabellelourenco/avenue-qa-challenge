@@ -24,7 +24,6 @@ jobs:
         uses: cypress-io/github-action@v5
         with:
           start: yarn cypress run --record --env grepTags=@smoke  
-          browser: chrome
           spec: "cypress/e2e/*/${{matrix.groups}}/*.cy.js"
         env:
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}

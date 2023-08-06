@@ -6,12 +6,19 @@
   "author": "Isabelle Lourenco",
   "license": "MIT",
   "scripts": {
-    "cypress:open": "cypress open"
+    "cypress:open": "cypress open",
+    "cypress:all": "cypress run --spec 'cypress/e2e/'",
+    "cypress:accessibility:cloud": "cypress run --env grepTags=@accessibility --record",
+    "cypress:smoke:cloud": "cypress run --env grepTags=@smoke --record",
+    "cypress:api": "cypress run --spec 'cypress/e2e/api/'",
+    "cypress:ui": "cypress run --spec 'cypress/e2e/ui/'"
   },
+
   "devDependencies": {
     "@cypress/grep": "^3.1.5",
     "axe-core": "^4.7.2",
     "cypress": "^12.17.3",
-    "cypress-axe": "^1.4.0"
+    "cypress-axe": "^1.4.0",
+    "cypress-plugin-xhr-toggle": "^1.0.0"
   }
 }

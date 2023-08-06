@@ -385,6 +385,11 @@ cypress-axe@^1.4.0:
   resolved "https://registry.yarnpkg.com/cypress-axe/-/cypress-axe-1.4.0.tgz#e67482bfe9e740796bf77c7823f19781a8a2faff"
   integrity sha512-Ut7NKfzjyKm0BEbt2WxuKtLkIXmx6FD2j0RwdvO/Ykl7GmB/qRQkwbKLk3VP35+83hiIr8GKD04PDdrTK5BnyA==
 
+cypress-plugin-xhr-toggle@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/cypress-plugin-xhr-toggle/-/cypress-plugin-xhr-toggle-1.0.0.tgz#5f89602ebcc94fc50940b08ffd4554c241fd9a55"
+  integrity sha512-Ds9ww5D3Wcd9SQWRY+IzLmTqVzPH6804p9SdvHriA0XpmL8LmiM+a6ikYOclnZF87KpZEDswjAQvrl907Ny6RA==
+
 cypress@^12.17.3:
   version "12.17.3"
   resolved "https://registry.yarnpkg.com/cypress/-/cypress-12.17.3.tgz#1e2b19037236fc60e4a4b3a14f0846be17a1fc0e"

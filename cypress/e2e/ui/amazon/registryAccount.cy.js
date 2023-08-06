@@ -2,7 +2,7 @@ describe('Account', () => {
     let testData;
 
     beforeEach(() => {
-      cy.accessHomePage()
+      cy.accessAmazonHomePage()
       cy.fixture('ui/user').then(u => {
         testData = u
       })
